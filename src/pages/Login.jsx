@@ -68,7 +68,7 @@ const Login = () => {
         height: "80vh",
       }}
     >
-      <h1 className="text-center my-5">{constantes.SIGN_IN}</h1>
+      <h1 className="text-center text-white my-5">{constantes.SIGN_IN}</h1>
 
       <Form className="m-auto" onSubmit={handleSubmit} method="POST">
         <BtnSocial />
@@ -84,7 +84,7 @@ const Login = () => {
           />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3 text-white" controlId="formBasicPassword">
           <Form.Label>{constantes.CONTRASENA}</Form.Label>
           <Form.Control
             type="password"
@@ -98,7 +98,7 @@ const Login = () => {
         <CustomizeButton
           custom="primary"
           type="submit"
-          className="my-1 btn-socials align-self-center"
+          className="my-1 btn-socials btn align-self-center"
           value={constantes.SIGN_IN}
           disabled={loading}
         />

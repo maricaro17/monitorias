@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const PrincipalMenu = () => {
   return (
     <div>
-      <Container>
+      <h1 className="text-white text-center my-4">Sistema de Monitorias</h1>
+
+      <Container className="d-flex justify-content-center">
         <div className="d-flex">
           <div>
             <div>
@@ -16,7 +18,12 @@ const PrincipalMenu = () => {
               />
             </div>
             <div>
-              <Link className="nav-link text-white bold text-decoration-none mx-4" to="/monitores">Monitores</Link>
+              <Link
+                className="nav-link text-white bold text-decoration-none mx-4 text-center"
+                to="/monitores"
+              >
+                Monitores
+              </Link>
             </div>
           </div>
           <div>
@@ -28,7 +35,12 @@ const PrincipalMenu = () => {
               />
             </div>
             <div>
-              <Link className="nav-link text-white bold text-decoration-none mx-4" to="/monitorias">Monitorias</Link>
+              <Link
+                className="nav-link text-white bold text-decoration-none mx-4 text-center"
+                to="/monitorias"
+              >
+                Monitorias
+              </Link>
             </div>
           </div>
         </div>

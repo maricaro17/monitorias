@@ -1,8 +1,12 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
+import { logout } from '../redux/actions/authAction';
 
 const NavBar = () => {
+    const dispatch = useDispatch();
+    const user = useSelector((store) => store.auth);
   return (
     <div>
         <Navbar>
@@ -35,6 +39,8 @@ const NavBar = () => {
             </Link>
             <button
               className="nav-link text-white bold text-decoration-none bg-transparent"
+              style={{ display: user?.isAuthenticated ? "block" : "none", border: "none"}}
+              onClick={() => dispatch(logout())}
             >
               Logout
             </button>

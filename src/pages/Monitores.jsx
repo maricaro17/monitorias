@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import FormRegisterMonitores from '../components/FormRegisterMonitores'
+import ListarMonitores from '../components/ListarMonitores'
 
 const Monitores = () => {
 
-const [modalShow, setModalShow]= useState(false)
+
 
   return (
     <div>
-        <Button onClick={()=>setModalShow(true)} >Agregar Monitor</Button>
-        <FormRegisterMonitores show={modalShow}
-        onHide={() => setModalShow(false)}/>
+        <ListarMonitores/>
     </div>
   )
 }

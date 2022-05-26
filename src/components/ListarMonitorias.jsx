@@ -48,8 +48,8 @@ const ListarMonitorias = () => {
                 <td>{item.fecha}</td>
                 <td>{item.salon}</td>
                 <td>
-                  <button>Editar</button>
-                  <button>Eliminar</button>
+                  <button className="btn btn-success text-white mx-2">Editar</button>
+                  <button className="btn btn-danger text-white mx-2">Eliminar</button>
                 </td>
               </tr>
             ))}
@@ -67,7 +67,6 @@ const ListarMonitorias = () => {
                 <FormRegisterMonitorias
                   show={modalShow}
                   onHide={() => setModalShow(false)}
-                  data={data}
                 />
               </td>
             </tr>
